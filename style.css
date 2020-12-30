@@ -1,0 +1,226 @@
+/* Empiezo por darle formato a las etiquetas de los textos de forma global*/
+
+h1			
+	{
+	color: #6894f9;
+	font: 1em verdana;
+	}
+	
+h2			
+	{
+	color: blue;
+	font: 1em verdana;
+	}
+	
+h4		
+	{
+	color: #0b4fee;
+	margin: 8px;
+	}
+		
+h5		
+	{
+	color: blue;
+	margin: 10px;
+	}
+		
+h6		
+	{
+	color: blue;
+	margin: 10px;
+	}
+	
+p			/* En el texto se ha incluido una etiqueta para una primera tabulacion del parrafo */
+	{font: 1em serif; text-indent: 4em;}
+	
+
+li			/* Formato para los enlaces a los contenidos */
+	{
+	display: inline;
+	padding: 5px 20px;
+	margin-left: 10px;
+	border: 2px solid #a2bcfb;
+	border-radius: 25%;
+	border-width: 2px;
+	background-color: #f0ffff;
+	}	
+	
+li:hover 		/* Aqui le damos el efecto de cambiar color de fondo al pasar el raton por encima */
+		{
+		background-color: #e6e6e6; 
+		}
+	
+table		/* Aqui se le da formato al borde y posicion de la tabla al completo. */
+			{
+			border: 2px solid blue;
+			margin-left: 20px;
+			margin-top: 50px;
+			}
+
+th			/* Aqui damos formato a las cabeceras de la tabla */
+			{
+			border: 1.5px solid blue;
+			width: 123px;
+			height: 40px;
+			font: 1em;
+			}
+			
+td			/* Aqui damos formato a los campos de actividades de la tabla  */
+			{
+			border: 1.5px dotted black;
+			width: 123px;
+			height: 40px;
+			text-align: center;
+			}
+			
+#contenido, #inicio, #actividades, #horarios, #contratacion				/* Aqui se le da el tamaño y posicion a las capas de contenidos */
+			{
+			height: 420px;
+			width: 100%;
+			margin-left: 20px;
+			}	
+
+#taichi, #pintura, #papiro, #logopedia, #rehab, #hidroterapia			/* Damos formato a las fotos de las actividades junto a sus titulos */
+			{
+			float:left;
+			margin-left: 20px;
+			margin-top: 10px;
+			text-align: center;
+			margin-bottom: 15px;			
+			}
+			
+.zoom			/* Aqui definimos el paso de la foto al pasar el raton por encima */
+			{
+			transition: transform 1.2s;
+			}
+			
+.zoom:hover			/* Aqui definimos lo que pasa cuando pasamos el raton por encima de las fotos en este caso */
+			{
+			transform: scale(1.4);
+			}
+
+#contenido			/* Con esta etiqueta hacemos que no se muestren todas las capas de contenido a la vez */
+			{
+			overflow: hidden;
+			}
+			
+#principal			/* Aqui damos formato al div principal */
+			{
+			width: 830px;
+			height: 600px;
+			margin: 5px auto;
+			background-color: #ffffff;
+			}
+
+#logotipo			/* Formato para el logotipo */
+			{
+			background-image: url(img/logo3.png);
+			background-repeat: no-repeat;
+			float: left;
+			width: 280px;
+			height: 110px;
+			margin-left: 10px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			}
+
+#menu			/* Formato para menu */
+			{
+			float: right;
+			margin-right: 1px;
+			margin-top: 70px;
+			color: #0b4fee;
+			}
+
+#menu a				/* Formato para la palabras del menu */
+			{
+			text-decoration: none;
+			color: #0b4fee;
+			}			
+
+#banner				/* Aqui posicionamos el banner */
+			{
+			margin-left: 30px;
+			}
+
+#pie				/* Aqui posicionamos el pie y definimos caracteristicas del texto que no se definieron al princiop y queremos que afecten aqui. */
+			{
+			margin-bottom: 40px;
+			text-align: center;
+			font: 0.7em arial;
+			}
+
+#fotocontra			/* Aqui cargamos la foto de la capa de formulario y le damos formato y posicion  */
+			{
+			background-image: url(img/contr.png);
+			background-repeat: no-repeat;
+			color: blue;
+			float: left;
+			width: 400px;
+			height: 299px;
+			margin-top: 50px;
+			margin-bottom: 5px;
+			}
+
+#formulario			/* Con esta etiqueta definimos la posicion del formulario */
+			{
+			float: left;
+			}
+
+#campnom, #e-mail, #telefono, #desplegable, #comentario, #botones			/* Aqui le damos formato a los titulos de los campos del formulario*/
+			{
+			margin-top: 5px;
+			font: 0.8em serif;
+			}			
+			
+#nombre, #email, #telf			/* Aqui definimos el tamaño de los campos del formulario*/
+			{
+			width: 400px;
+			height: 15px;
+			}
+
+
+#fotocc			/* Aqui damos formato y posicion al logo de CreativeCommons en el pie de pagina */
+			{
+			background-image: url(img/cc.jpg);
+			background-repeat: no-repeat;
+			float: right;
+			width: 200px;
+			height: 80px;
+			margin-right: -80px;
+			margin-top: 30px;
+			}
+
+#aviso			/* Aqui damos formato y posicion al enlace de aviso legal de CreativeCommons en el pie de pagina */
+			{
+			float: right;
+			margin-right: 110px;
+			margin-top: 45px;
+			}
+			
+#datos 			/* Aqui damos formato y posicion a la informacion de la empresa y del autor web en el pie de pagina */	
+			{
+			float: left;
+			margin-top: 20px; 
+			}
+
+
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
