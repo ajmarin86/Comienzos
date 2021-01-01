@@ -6,33 +6,26 @@ h1
 	font: 1em verdana;
 	}
 	
-h2			
-	{
-	color: blue;
-	font: 1em verdana;
-	}
-	
 h4		
 	{
 	color: #0b4fee;
 	margin: 8px;
 	}
-		
-h5		
+	
+	/* En el texto de parrafo se ha incluido una etiqueta para una primera tabulacion del parrafo */
+p			
 	{
-	color: blue;
-	margin: 10px;
-	}
-		
-h6		
-	{
-	color: blue;
-	margin: 10px;
+	font: 0.9em comic-sans italic;
+	text-indent: 4em; 
+	margin: 5px;
 	}
 	
-p			/* En el texto se ha incluido una etiqueta para una primera tabulacion del parrafo */
-	{font: 1em serif; text-indent: 4em;}
-	
+#parrafo
+	{
+	font: 1em arial italic;	
+	color: #6b6db1;
+	}
+
 
 li			/* Formato para los enlaces a los contenidos */
 	{
@@ -73,46 +66,15 @@ td			/* Aqui damos formato a los campos de actividades de la tabla  */
 			text-align: center;
 			}
 			
-#contenido, #inicio, #actividades, #horarios, #contratacion				/* Aqui se le da el tamaño y posicion a las capas de contenidos */
+#principal	/* Aqui damos formato al div principal */
 			{
-			height: 420px;
-			width: 100%;
-			margin-left: 20px;
+			width: 850px;
+			height: 650px;
+			margin: 1px auto;
+			background-color: #ffffff;
 			}	
 
-#taichi, #pintura, #papiro, #logopedia, #rehab, #hidroterapia			/* Damos formato a las fotos de las actividades junto a sus titulos */
-			{
-			float:left;
-			margin-left: 20px;
-			margin-top: 10px;
-			text-align: center;
-			margin-bottom: 15px;			
-			}
-			
-.zoom			/* Aqui definimos el paso de la foto al pasar el raton por encima */
-			{
-			transition: transform 1.2s;
-			}
-			
-.zoom:hover			/* Aqui definimos lo que pasa cuando pasamos el raton por encima de las fotos en este caso */
-			{
-			transform: scale(1.4);
-			}
-
-#contenido			/* Con esta etiqueta hacemos que no se muestren todas las capas de contenido a la vez */
-			{
-			overflow: hidden;
-			}
-			
-#principal			/* Aqui damos formato al div principal */
-			{
-			width: 830px;
-			height: 600px;
-			margin: 5px auto;
-			background-color: #ffffff;
-			}
-
-#logotipo			/* Formato para el logotipo */
+#logotipo	/* Formato para el logotipo */
 			{
 			background-image: url(img/logo3.png);
 			background-repeat: no-repeat;
@@ -120,37 +82,69 @@ td			/* Aqui damos formato a los campos de actividades de la tabla  */
 			width: 280px;
 			height: 110px;
 			margin-left: 10px;
-			margin-top: 5px;
 			margin-bottom: 5px;
 			}
 
-#menu			/* Formato para menu */
+#menu		/* Formato para menu */
 			{
 			float: right;
 			margin-right: 1px;
-			margin-top: 70px;
+			margin-top: 50px;
 			color: #0b4fee;
 			}
 
-#menu a				/* Formato para la palabras del menu */
+#menu a		/* Formato para la palabras del menu */
 			{
 			text-decoration: none;
 			color: #0b4fee;
 			}			
-
-#banner				/* Aqui posicionamos el banner */
+			
+#contenido, #inicio, #actividades, #horarios, #contratacion				/* Aqui se le da el tamaño y posicion a las capas de contenidos */
 			{
-			margin-left: 30px;
+			height: 535px;
+			width: 830px;
+			margin-left: 20px;
 			}
 
-#pie				/* Aqui posicionamos el pie y definimos caracteristicas del texto que no se definieron al princiop y queremos que afecten aqui. */
+#contenido	/* Con esta etiqueta hacemos que no se muestren todas las capas de contenido a la vez */
 			{
-			margin-bottom: 40px;
+			overflow: hidden;
+			}
+
+#pie		/* Aqui posicionamos el pie y definimos caracteristicas del texto que no se definieron al princiop y queremos que afecten aqui. */
+			{
+			
 			text-align: center;
 			font: 0.7em arial;
 			}
+			
+#taichi, #pintura, #papiro, #logopedia, #rehab, #hidroterapia			/* Damos formato a las fotos de las actividades junto a sus titulos */
+			{
+			float:left;
+			margin-left: 20px;
+			margin-top: 30px;
+			text-align: center;
+			margin-bottom: 15px;			
+			}
+			
+.zoom		/* Aqui definimos el paso de la foto al pasar el raton por encima */
+			{
+			transition: transform 1.2s;
+			}
+			
+.zoom:hover	/* Aqui definimos lo que pasa cuando pasamos el raton por encima de las fotos en este caso */
+			{
+			transform: scale(1.4);
+			}
 
-#fotocontra			/* Aqui cargamos la foto de la capa de formulario y le damos formato y posicion  */
+#banner		/* Aqui posicionamos el banner */
+			{
+			margin-left: 30px;
+			margin-bottom: 20px;
+			margin-top: 20px;
+			}
+
+#fotocontra	/* Aqui cargamos la foto de la capa de formulario y le damos formato y posicion  */
 			{
 			background-image: url(img/contr.png);
 			background-repeat: no-repeat;
@@ -162,9 +156,10 @@ td			/* Aqui damos formato a los campos de actividades de la tabla  */
 			margin-bottom: 5px;
 			}
 
-#formulario			/* Con esta etiqueta definimos la posicion del formulario */
+#formulario	/* Con esta etiqueta definimos la posicion del formulario */
 			{
 			float: left;
+			margin-top: 30px;
 			}
 
 #campnom, #e-mail, #telefono, #desplegable, #comentario, #botones			/* Aqui le damos formato a los titulos de los campos del formulario*/
@@ -180,7 +175,7 @@ td			/* Aqui damos formato a los campos de actividades de la tabla  */
 			}
 
 
-#fotocc			/* Aqui damos formato y posicion al logo de CreativeCommons en el pie de pagina */
+#fotocc		/* Aqui damos formato y posicion al logo de CreativeCommons en el pie de pagina */
 			{
 			background-image: url(img/cc.jpg);
 			background-repeat: no-repeat;
@@ -191,17 +186,17 @@ td			/* Aqui damos formato a los campos de actividades de la tabla  */
 			margin-top: 30px;
 			}
 
-#aviso			/* Aqui damos formato y posicion al enlace de aviso legal de CreativeCommons en el pie de pagina */
+#aviso		/* Aqui damos formato y posicion al enlace de aviso legal de CreativeCommons en el pie de pagina */
 			{
 			float: right;
 			margin-right: 110px;
 			margin-top: 45px;
 			}
 			
-#datos 			/* Aqui damos formato y posicion a la informacion de la empresa y del autor web en el pie de pagina */	
+#datos 		/* Aqui damos formato y posicion a la informacion de la empresa y del autor web en el pie de pagina */	
 			{
 			float: left;
-			margin-top: 20px; 
+			margin-top: 40px; 
 			}
 
 
