@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<!-- Se define el canal -->
+   <channel>
+         <title>Canal RSS</title>
+         <link>http://www.mipagina.es</link>
+         <description>Canal RSS de ejemplo</description>
+         <language>es</language>
+<!-- Se definen los distintos items del canal-->      
+	 <item>
+             <title>El tiempo en Almería</title>
+             <link>http://www.aemet.es/es/eltiempo/prediccion/municipios/almeria-id04013</link>
+             <description>Meteorología en Almería</description>
+         </item>
+	 <item>
+             <title>Noticias de interés</title>
+             <link>http://desarrolloweb.com/de_interes/</link>
+             <description>Aqui podras encontrar todo tipo de noticias interesantes para los desarrolladores web</description>
+        </item>
+    </channel>
+</rss>
